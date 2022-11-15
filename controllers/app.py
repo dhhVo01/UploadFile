@@ -1,9 +1,9 @@
 
 import sys
 import os
-os.system('py -m pip install --upgrade pip')
-os.system('py -m pip install pandas')
-os.system('py -m pip install openpyxl')
+os.system('python -m pip install --upgrade pip')
+os.system('python -m pip install pandas')
+os.system('python -m pip install openpyxl')
 import pandas as pd
 import numpy as np
 from statistics import mode

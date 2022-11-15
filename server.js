@@ -19,7 +19,7 @@ app.post("/api/upload", function(req, res){
 
     /* DO SOMETHING WITH workbook HERE */
     //res.send(path);
-    var process = spawn("py", ["./controllers/app.py", path]);
+    var process = spawn("python", ["./controllers/app.py", path]);
     process.stdout.on("data", function(data){
         res.write(data.toString());
         console.log(data.toString());
